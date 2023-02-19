@@ -1,38 +1,106 @@
+@font-face {
+  font-family: "Quick";
+  src: url("../Fonts/Tajawal-Regular.ttf") format(woff2);
+}
+*::before, *::after, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quick";
+}
+
 .App {
-  text-align: center;
+  transition: 0.5s ease all;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(192, 216, 230);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  animation-name: animation_header;
+  animation-duration: 0.8s;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes animation_header {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-40px);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
+.dark {
+  background: rgba(0, 0, 0, 0.783);
+}
+
+.light {
+  background: #fff;
+}
+
+.dark .public_header {
+  background: rgba(0, 0, 0, 0.783);
+  transition: 0.5s ease all;
+}
+
+.dark .public_header .logo, .dark .public_header ul li a, .dark .private_header .logo {
+  color: #fff;
+}
+
+.dark .public_header ul li::after {
+  background: #fff;
+}
+
+.dark .public_header .login_a {
+  background: #fff;
+}
+
+.dark .public_header .login_a:hover {
+  background: rgb(192, 216, 230);
+}
+
+.dark .public_header .check {
+  border: 1px solid rgba(255, 255, 255, 0.4078431373);
+}
+
+.dark .home_page, .dark .animText, .dark .public_admin {
+  height: 90.3vh;
+  color: #fff;
+}
+
+.dark .home_page .link, .dark .public_admin .link {
+  color: aqua;
+  padding: 0rem 0.5rem;
+}
+
+.dark .login h1 {
+  color: #fff;
+}
+
+.dark .login .login_submitter {
+  color: #000;
+}
+
+.dark .register h1 {
+  color: #fff;
+  font-size: 49px;
+}
+
+.dark .register .profile_akkaunt {
+  color: aqua;
+}
+
+.dark .sidebar {
+  background: black;
+}
+
+.dark .admin h1 {
+  color: #fff;
+}
+
+.dark .private_header {
+  background: rgba(0, 0, 0, 0.783);
+}/*# sourceMappingURL=App.css.map */

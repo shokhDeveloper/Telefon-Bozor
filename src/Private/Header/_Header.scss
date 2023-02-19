@@ -1,0 +1,64 @@
+@import "../../assets/scss/mixin";
+@import "../../assets/scss/varieble";
+nav{
+    padding: 0.5rem;
+}
+.private_header{
+    width: 100%;
+    transition: 0.5s ease all
+}
+.private_header nav{
+    @include between;
+}
+.bar{
+    list-style-type: none;
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    right: 5rem;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0.5em;
+}
+.bar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+.bar li{
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.249);
+}
+.private_header .bar{
+    display: none;
+}
+
+.private_nav_child_1{
+    width: 25%;
+    @include between;
+}
+.private_nav_child_1 .logo{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.private_nav_child_2{
+    width: 20%;
+    @include between;
+}
+.btn{
+    padding: 0.2rem 1rem;
+    font-size: 17px;
+    border-radius: 5px;
+    background: $oq;
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    transition: 0.5s ease all;
+}
+.btn:hover{
+    background: aqua;
+    color: black;
+}
+.btn:active{
+    background: black;
+    color: $oq;
+}

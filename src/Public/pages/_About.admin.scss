@@ -1,0 +1,45 @@
+.public_admin{
+    min-height: 90.3vh;
+}
+.public_admin h2{
+    font-size: 38px;
+    padding: 1rem;
+    text-align: center;
+}
+.public_admin_align{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.public_admin_align img{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    border-radius: 40px;
+}
+.public_admin_align_text h3{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 1rem    ;
+}
+.public_admin_align_text p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    // padding-top: 1rem;
+}
+.fadeInUp{
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+}
+@keyframes fadeInUp {
+    from{
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

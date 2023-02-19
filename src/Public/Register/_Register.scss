@@ -1,0 +1,66 @@
+@import "../../assets/scss/varieble";
+@import "../../assets/scss/mixin";
+.register{
+    width: 100%;
+    min-height: 100vh;
+    @include center
+}
+.register h1{
+    font-size: 49px;
+}
+.form{
+    text-align: center;
+}
+.form .input{
+    width: 20%;
+    margin: 0.5rem auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s ease all;
+}
+.form input:focus{
+    outline: 2px solid rgb(67, 180, 224);
+}
+.form input:not(:placeholder-shown):valid{
+    outline: 2px solid rgb(102, 255, 102);
+}
+.form input:not(:placeholder-shown):invalid{
+    outline: 2px solid crimson;
+}
+.error_text{
+    color: crimson;
+    font-size: 20px;
+}
+.error_text:nth-child(8){
+    padding-bottom: 1rem;
+}
+.form button{
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+
+.register_effect{
+    animation-name: register_effect;
+}
+@keyframes register_effect{
+    from{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.profile_akkaunt{
+    font-size: 20px;
+}

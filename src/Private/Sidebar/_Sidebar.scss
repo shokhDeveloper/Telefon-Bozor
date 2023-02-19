@@ -1,0 +1,25 @@
+@import "../../assets/scss/varieble";
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Sidebar_button{
+    color: black;
+    border: 1px solid transparent;
+    padding: 0.5rem ; 
+    border-radius: 40px;  
+    transition: 0.5s ease all;
+}
+.Sidebar_button:hover{
+    background: black;
+    color: $oq;
+}
+.Sidebar_button:active{
+    background: #fff;
+    color: black;
+}

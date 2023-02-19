@@ -1,0 +1,29 @@
+.public_about{
+    display: grid;
+    grid-template-columns: 40% 50%;   
+}
+.public_about_text{
+    padding-top: 7rem;
+}
+.public_about_text h2{
+    font-size: 40px;
+}
+.public_about_text p{
+    padding-top: 1rem;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.animText{
+    animation-name: animText;
+}
+@keyframes animText {
+    from{
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

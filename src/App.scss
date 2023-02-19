@@ -1,0 +1,85 @@
+@import "./assets/scss/varieble";
+@import "./assets/scss/fonts";
+*::before, *::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quick";
+}
+.App{
+    transition: 0.5s ease all;
+}
+body{
+    background: $background;
+}
+header{
+    animation-name: animation_header;
+    animation-duration: 0.8s;
+    z-index: 1;
+}
+@keyframes animation_header {
+    from{
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.dark{
+    background: $dark;
+}
+
+.light{
+    background:#fff
+}
+.dark .public_header{
+    background:$dark;
+    transition: 0.5s ease all;
+}
+.dark .public_header .logo, .dark .public_header ul li a, .dark .private_header .logo{
+    color: #fff;
+}
+.dark .public_header ul li::after{
+    background: $oq;
+}
+.dark .public_header .login_a{
+    background: $oq;
+}
+.dark .public_header .login_a:hover{
+    background: $background;    
+}
+.dark .public_header .check{
+    border: 1px solid #ffffff68;
+}
+.dark .home_page, .dark .animText, .dark .public_admin{
+    height: 90.3vh;
+    color: #fff;
+}
+.dark .home_page .link, .dark .public_admin .link{
+    color: aqua;
+    padding: 0rem 0.5rem;
+}
+.dark .login h1{
+    color: #fff;
+}
+.dark .login .login_submitter{
+    color: #000;
+}
+.dark .register h1{
+    color: #fff;
+    font-size: 49px;
+}
+.dark .register .profile_akkaunt{
+    color: aqua;
+}
+.dark .sidebar{
+    background: black;
+}
+.dark .admin h1{
+    color: $oq;
+}
+.dark .private_header{
+    background: $dark;
+}

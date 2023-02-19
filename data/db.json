@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "$2a$10$3iffam2cDZgX1CwzPJf0x.6Gg7y6ujZ5zDjkyx.PKaR4UEDf9KFEu",
+      "name": "Shohijahon",
+      "lastname": "Musinkulov",
+      "date": "17.02.2023-23:39 Register-At",
+      "id": 1
+    },
+    {
+      "email": "dostonqudratov@gmail.com",
+      "password": "$2a$10$tUIiLxf3SKFJFGHQrSgFVuv0/65YeziUZxTJkGgqeHPBWNz7X/Apy",
+      "name": "Doston",
+      "lastname": "Qudratov",
+      "date": "17.02.2023-23:52 Register-At",
+      "id": 2
+    },
+    {
+      "email": "leomessi@gmail.com",
+      "password": "$2a$10$W.zO7Iuxf9AQqsljSKCQ1OOwdRbQbREQc5vZnbKvOoqG6TrTIlMEe",
+      "name": "Lionel",
+      "lastname": "Messi",
+      "date": "19.02.2023-12:33 Register-At",
+      "id": 3
+    }
+  ],
+  "posts": [],
+  "category": [
+    {
+      "name": "Apple",
+      "model": "Apple",
+      "date": "19.02.2023-14:34 Create-At",
+      "id": 1
+    },
+    {
+      "name": "Samsung",
+      "model": "Samsung",
+      "date": "19.02.2023-14:35 Create-At",
+      "id": 2
+    },
+    {
+      "name": "Xiaomi",
+      "model": "Xiaomi",
+      "date": "19.02.2023-14:36 Create-At",
+      "id": 3
+    },
+    {
+      "name": "Vivo",
+      "model": "Vivo",
+      "date": "19.02.2023-14:37 Create-At",
+      "id": 5
+    },
+    {
+      "name": "Huawei",
+      "model": "Huawei",
+      "date": "19.02.2023-22:40 Create-At",
+      "id": 6
+    }
+  ],
+  "product": [],
+  "order": []
+}
